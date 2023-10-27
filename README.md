@@ -24,6 +24,14 @@
 
 - Changes in `project-d` will be reflected in both library `project-c` and app `project-b` in watch/dev mode
 
+----- 
+
+`run`
+```sh
+node linker
+```
+Example `config`
+
 ```json
 {
   "options": {
