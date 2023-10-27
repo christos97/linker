@@ -1,0 +1,30 @@
+{
+  "options": {
+    "removeLockfile": false,
+    "unlink": true
+  },
+  "packages": [
+    {
+      "name": "@org/project-a",
+      "dir": "project-a"
+    },
+    {
+      "name": "@org/project-b",
+      "dir": "project-b"
+    },
+    {
+      "name": "@org/project-c",
+      "dir": "project-c"
+    },
+    {
+      "name": "@org/project-d",
+      "dir": "project-d"
+    }
+  ],
+  "dependencies": {
+    "@org/project-a": ["@org/project-b"],
+    "@org/project-b": ["@org/project-c", "@org/project-d"],
+    "@org/project-c": ["@org/project-d"],
+    "@org/project-d": null
+  }
+}
